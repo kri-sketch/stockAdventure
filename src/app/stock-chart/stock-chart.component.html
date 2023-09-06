@@ -1,1 +1,23 @@
-<p>stock-chart works!</p>
+<div>
+  <h2>Stock Chart</h2>
+  <div class="chart-container">
+    <canvas
+      baseChart
+      [data]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="chartLegend"
+    ></canvas>
+  </div>
+
+  <div>
+    <input [(ngModel)]="query" placeholder="Enter stock symbol or name" />
+    <button (click)="searchStock(query)">Search</button>
+  </div>
+  <div *ngIf="stockData">
+    <!-- Display stock data here -->
+    <h3>{{ stockData.title }}</h3>
+    <p>Current Value: {{ stockData.currentValue }}</p>
+    <!-- Add more data fields as needed -->
+  </div>
+</div>

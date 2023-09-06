@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgChartsModule } from 'ng2-charts';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   ],
   imports: [
     MatListModule,
+    NgChartsModule,
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MatSidenavModule,

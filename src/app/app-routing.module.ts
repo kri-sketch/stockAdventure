@@ -9,6 +9,7 @@ import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analy
 const routes: Routes = [
   { path: '', redirectTo: '/stock-search', pathMatch: 'full' },
   { path: 'stock-search', component: StockSearchComponent },
+  { path: 'stock-chart', component: StockChartComponent },
   { path: 'ai-predictions', component: AiPredictionsComponent },
   { path: 'sentiment-analysis', component: SentimentAnalysisComponent },
 ];

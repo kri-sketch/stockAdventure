@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-stock-search',
   templateUrl: './stock-search.component.html',
-  styleUrls: ['./stock-search.component.css']
+  styleUrls: ['./stock-search.component.css'],
 })
 export class StockSearchComponent {
   query: string = '';

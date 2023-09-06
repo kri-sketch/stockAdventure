@@ -6,12 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class StockService {
-  searchStock(query: string) {
-    throw new Error('Method not implemented.');
-  }
   private apiUrl = 'https://api.moneycontrol.com/mcapi/sensex/index.php';
 
   constructor(private http: HttpClient) {}
+
+  searchStock(query: string): Observable<any> {
+    const url = `${this.apiUrl}?search=${query}`;
+    return this.http.get(url);
+  }
 
   getStockData(symbol: string): Observable<any> {
     const url = `${this.apiUrl}?symbol=${symbol}`;
