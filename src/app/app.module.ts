@@ -19,6 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NgChartsModule } from 'ng2-charts';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'; 
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MatSidenavModule,
     MatSnackBarModule,
     MatToolbarModule,
