@@ -1,0 +1,19 @@
+<!-- stock-search.component.html -->
+<div class="container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Stock Search</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- Add your search form here -->
+        <form>
+          <mat-form-field>
+            <input matInput placeholder="Enter stock symbol">
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Search</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
